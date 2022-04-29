@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="Digital" property="og:title" />
+
+		<meta content="sig.gif" property="og:image" />
+
+		<link type="application/json+oembed" href="oembed.json" />
+		<title>Digital</title>
+		<!-- Favicon -->
+		<link rel="icon" href="icon.gif" type="image/x-icon" />
+		<!-- Font Awesome icons -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<!-- Core theme CSS -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body id="vanta">
+		<!-- Parallax Pixel Background Animation -->
+		<section class="animated-background">
+			<div id="stars1"></div>
+			<!-- <div id="stars2"></div>
+			<div id="stars3"></div> -->
+		</section>
+		<!-- End of Parallax Pixel Background Animation -->
+
+		<a id="profilePicture" href="#popup">
+			<img src="icon.gif" alt="Profile Picture" />
+		</a>
+
+		<div class="overlay" id="popup">
+			<div class="popup">
+				<div class="popup-photo">
+					<a href="https://ogu.gg/Digital" target="_blank">
+						<img src="icon.gif" alt="Profile Picture" />
+					</a>
+				</div>
+				<div class="popup-quote">
+					But... the sensation that I've lost something lingers for a longtime
+					after I wake up.
+				</div>
+				<a class="popup-close" onclick="history.back()">&times;</a>
+			</div>
+		</div>
+
+		<div id="userName">Digital</div>
+
+		<div id="userName">Discord: Bedstorm#3500</div>
+
+		<div id="links">
+			<a class="link" href="https://ogu.gg/Digital" target="_blank">
+				<i class="fas fa-infinity">&nbsp;</i>OGU
+			</a>
+			<a
+				class="link"
+				href="https://ogu.gg/reputation.php?uid=401303"
+				target="_blank"
+			>
+				<i class="fas fa-plus">&nbsp;</i>Rep me on OGU
+			</a>
+			<a
+				class="link"
+				href="https://mempool.space/address/bc1qgep6ydjakk2jcvfmsjcxpddhej5jaw50g0nkxk"
+				target="_blank"
+			>
+				<i class="fab fa-bitcoin">&nbsp;</i>BTC address
+			</a>
+			<a
+				class="link"
+				href="https://blockchair.com/litecoin/address/ltc1qka47utfqvpgg0vdg3al9x65saej94e7puxq50d"
+				target="_blank"
+			>
+				<i class="fas fa-coins">&nbsp;</i>LTC address
+			</a>
+			<a class="link" href="https://discord.gg/Uxmtkt32gT" target="_blank">
+				<i class="fab fa-discord">&nbsp;</i>Discord Server
+			</a>
+			<a
+				class="link"
+				href="https://steamcommunity.com/id/KeyBotElite/inventory/#440"
+				target="_blank"
+			>
+				<i class="fas fa-key">&nbsp;</i>TF2 Key Stock
+			</a>
+		</div>
+
+		<div id="hashtag">❤</div>
+	</body>
+	<script src="three.min.js"></script>
+	<script src="vanta.halo.min.js"></script>
+	<script>
+		VANTA.HALO({
+			el: "#vanta",
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.0,
+			minWidth: 200.0,
+			amplitudeFactor: 1.5,
+			// yOffset: -0.1,
+			size: 2.5,
+			baseColor: 0x1c00f5,
+		});
+	</script>
+</html>
